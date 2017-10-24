@@ -21,7 +21,8 @@ public class Importar {
 	        while ((linha = br.readLine()) != null) {
 	        Scanner ler = new Scanner(csv);
 	        String linhas = new String();
-for (int i =0;i<contato.length;i++) {	contato[i]=new Contatos();}
+for (int i =0;i<contato.length;i++) {	
+	contato[i]=new Contatos();}
 
 		
             int contador=0;
@@ -29,7 +30,7 @@ for (int i =0;i<contato.length;i++) {	contato[i]=new Contatos();}
             	linhas = ler.nextLine();
                 String[] Divide = linhas.split(",");
                 contato[contador].setNome(Divide[0]);
-                contato[contador].setEmail(Divide[1]);
+              contato[contador].setEmail(Divide[1]);
                 contador++;}
                        
 	        }
